@@ -17,8 +17,8 @@ type PageEpisodeItemParams = {
 
 const PageEpisodeItem: FC = () => {
   const navigate = useNavigate();
-  const { episodeCharacter } = useTypedSelector((state) => state);
   const { saveCharacters } = useActions();
+  const { episodeCharacter } = useTypedSelector((state) => state);
   const { id } = useParams<PageEpisodeItemParams>();
   const { data, isError, isLoading } = useGetOneEpisodeQuery(`${id}`);
 
@@ -34,6 +34,7 @@ const PageEpisodeItem: FC = () => {
         )
       )
       .catch((e) => console.log(e.message));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   return (
