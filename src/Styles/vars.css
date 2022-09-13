@@ -1,0 +1,26 @@
+:root {
+  /* colors */
+  --black: #000000;
+  --white: #ffffff;
+  --light-yellow: #bfde42;
+  --light-blue: #0c8bb6;
+  --gray-rgb: rgb(32, 35, 41);
+  --nav-link: rgb(32, 35, 41);
+  --gray: #6e6e6e;
+
+  --violet: #5c5693;
+  --yellow: #e0e436;
+  --btn-bgc: rgb(90 177 63);
+  --bg-dark-red: #7e2107;
+  --bg-gold: #ffd527;
+  --drop-black: drop-shadow(0px 0px 6px black);
+
+  /* pd mg */
+  --p20: 20px;
+
+  /* fs */
+  --fs-sm: 16px;
+  --fs-smmd: 18px;
+  --fs-md: 24px;
+  --fs-lg: 66px;
+}

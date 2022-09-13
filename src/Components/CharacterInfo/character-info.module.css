@@ -1,0 +1,27 @@
+.info__wrapper {
+  max-width: 250px;
+  padding: var(--p20);
+  cursor: pointer;
+}
+.info__image {
+  padding: var(--p20);
+  background: var(--violet);
+}
+.info__image > img {
+  filter: var(--drop-black);
+  max-width: 100%;
+}
+.info__text > p {
+  color: var(--white);
+}
+
+.info__text {
+  font-size: var(--fs-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  background: var(--gray);
+  padding: 10px 0;
+}

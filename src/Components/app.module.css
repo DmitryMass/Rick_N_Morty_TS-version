@@ -1,0 +1,26 @@
+.app__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.app__header,
+.app__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app__header {
+  min-height: 50px;
+}
+.nav__link {
+  padding: 12px 16px;
+  font-size: var(--fs-md);
+  color: var(--nav-link);
+}
+
+@media screen and (max-width: 576px) {
+  .nav__link {
+    font-size: var(--fs-sm);
+  }
+}

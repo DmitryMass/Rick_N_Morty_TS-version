@@ -1,0 +1,33 @@
+.character {
+  max-width: 300px;
+  cursor: pointer;
+  color: var(--black);
+  transition: transform 0.3s ease;
+}
+.character:hover {
+  transform: scale(1.1);
+}
+.character,
+.character__img,
+.character__info {
+  padding: var(--p20);
+}
+
+.character__img {
+  background: var(--bg-gold);
+}
+.character__img > img {
+  filter: var(--drop-black);
+  max-width: 100%;
+}
+
+.character__info {
+  background: var(--light-blue);
+  min-height: 30px;
+}
+.character__info > h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: var(--white);
+}

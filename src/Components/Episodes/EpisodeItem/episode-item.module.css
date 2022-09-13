@@ -1,0 +1,8 @@
+.episode {
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.episode:hover {
+  transform: scale(1.1);
+}

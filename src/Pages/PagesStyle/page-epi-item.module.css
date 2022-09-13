@@ -1,0 +1,69 @@
+.page__epi_btn {
+  border: none;
+  padding: 8px 14px;
+  position: absolute;
+  background-color: var(--bg-gold);
+  color: var(--gray);
+  font-weight: 600;
+  border-radius: 10px 0 0 0;
+  transition: transform 0.1s ease;
+  top: -15px;
+}
+.page__epi_btn:hover {
+  transform: scale(1.1);
+}
+.episodeItem {
+  background: var(--bg-dark-red);
+  padding: 20px 0;
+}
+
+.episodeItem__wrapper {
+  padding: var(--p20);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 300px));
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background: var(--gray-rgb);
+}
+.episodeItem__head {
+  position: relative;
+}
+
+.episodeItem__episod {
+  text-align: center;
+  font-size: var(--fs-md);
+  color: var(--white);
+}
+.episodeItem__episod > h1,
+h3,
+p {
+  margin-bottom: 10px;
+}
+.episodeItem__container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .episodeItem__wrapper {
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+  }
+}
+@media screen and (max-width: 992px) {
+  .episodeItem__wrapper {
+    grid-template-columns: repeat(2, minmax(200px, 300px));
+  }
+}
+@media screen and (max-width: 576px) {
+  .episodeItem__wrapper {
+    grid-template-columns: repeat(1, minmax(200px, 300px));
+  }
+  .episodeItem__episod > h1,
+  h3,
+  p {
+    font-size: var(--fs-smmd);
+  }
+}

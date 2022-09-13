@@ -1,0 +1,11 @@
+.character__wrapper {
+  background: var(--bg-dark-red);
+}
+.character__title {
+  color: var(--white);
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: var(--p20);
+}

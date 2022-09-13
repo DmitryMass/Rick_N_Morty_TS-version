@@ -1,0 +1,26 @@
+.character__btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0 var(--p20);
+}
+
+.character__btn,
+.btn__disabled {
+  border: none;
+  border-radius: 8px;
+  background: var(--btn-bgc);
+  color: var(--white);
+  padding: 10px 16px;
+  transition: transform 0.1s ease;
+}
+.character__btn:hover,
+.character__btn:focus {
+  transform: scale(1.05);
+}
+
+.btn__disabled {
+  background: var(--gray-rgb);
+  color: var(--bg-dark-red);
+}

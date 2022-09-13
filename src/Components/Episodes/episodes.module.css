@@ -1,0 +1,24 @@
+.episodes__wrapper {
+  background: var(--bg-dark-red);
+  color: var(--white);
+  padding: var(--p20);
+  min-height: calc(100vh - 90px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.episodes__title {
+  color: var(--white);
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: var(--p20);
+}
+.episodes__overlayer {
+  background: var(--gray-rgb);
+}
