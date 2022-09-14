@@ -5,6 +5,8 @@ import Error from '../Components/Error';
 import Loading from '../Components/Loading';
 import { useGetOneCharacterQuery } from '../Store/RickMortyApi/rick-morty';
 
+import { FcApprove, FcBadDecision } from 'react-icons/fc';
+
 import styles from './PagesStyle/page-ch-item.module.css';
 
 type PageCharacterItemParams = {
@@ -31,11 +33,20 @@ const PageCharacterItem: FC = () => {
         <div className={styles.page__info}>
           {isLoading && <Loading />}
           {isError && <Error />}
-          <p>
-            {data?.id}. {data?.name}
-          </p>
+          <p>{data?.name}</p>
           <p>Gender:{data?.gender}</p>
-          <p>Status:{data?.status}</p>
+          <p>
+            Status:{' '}
+            {data?.status === 'Alive' ? (
+              <span>
+                {data?.status} <FcApprove />
+              </span>
+            ) : (
+              <span>
+                {data?.status} <FcBadDecision />
+              </span>
+            )}
+          </p>
           <p>Species:{data?.species}</p>
           <p>Planet:{data?.origin.name}</p>
           <p>Location: {data?.location.name}</p>

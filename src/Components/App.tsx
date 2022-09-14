@@ -20,7 +20,6 @@ const App: FC = () => {
       <div className={styles.app__container}>
         <header className={styles.app__header}>
           <Link to={ROUTE.HOME}>
-            {/* Rk & Mty */}
             <img className={styles.nav__logo} src={logo} alt='' />
           </Link>
           <nav className={styles.app__nav}>
